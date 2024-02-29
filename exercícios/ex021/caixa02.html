@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+        }
+
+        header, section,span{
+            background-color: whitesmoke;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.404);
+        }
+
+        section{
+            width: 45%;
+        }
+
+        section.right{
+            margin-left: 50%;
+        }
+        
+
+        main{
+            background-color: rgb(216, 216, 216);
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.404);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 1px;
+            border-radius: 5px;
+        }
+
+        article{
+            background-color: lightgray;
+            border-radius: 5px;
+            padding: 5px;
+            text-align: justify;
+
+            outline-width: 3px;
+            outline-color: black;
+            outline-style: dotted;
+            margin-bottom: 10px;
+        }
+
+        aside{
+            background-color: rgb(180, 180, 180);
+            width: fit-content;
+            margin: auto;
+            border-radius: 2px;
+            height: fit-content;
+        }
+
+        nav > a{
+            text-decoration:  none;
+            text-align: center;
+            margin-right: 15px;
+            background-color: darkgray;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.404);
+        }
+
+        .styled_title{
+            font-style: italic;
+            text-decoration: wavy;
+            font-size: 220%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="styled_title">Tudo sobre Quase Tudo</h1>
+        <nav>
+            <a href="#">Casa</a>
+            <a href="#">Esportes</a>
+            <a href="#">Notícias</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Sobre nós</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <span id="assuntos">
+            <h2 class="styled_title">Informações Relevantes!</h2>
+            <article>
+                <h2>Guerra do Paraguai</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatibus vero iure rem fuga eligendi perspiciatis, vitae omnis placeat dicta soluta maxime velit consequuntur quasi, quo minima eum ea voluptatem.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Nova receita da dona Emília</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatibus vero iure rem fuga eligendi perspiciatis, vitae omnis placeat dicta soluta maxime velit consequuntur quasi, quo minima eum ea voluptatem.</p>
+                <aside>
+                    <p>Artigo escrito por Killian Mbappé</p>
+                </aside>
+            </article>
+        </span>
+
+        <li>
+            <span id="noticias" class="right">
+                <h2 class="styled_title">Hora das Notícias!</h2>
+                <article>
+                    <h2>Notícia sobre o brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatibus vero iure rem fuga eligendi perspiciatis, vitae omnis placeat dicta soluta maxime velit consequuntur quasi, quo minima eum ea voluptatem.</p>
+                    <aside>
+                        <p>Artigo escrito por Augusto Ferreira</p>
+                    </aside>
+                </article>
+                <article>
+                    <h2>Notícia sobre a russia</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatibus vero iure rem fuga eligendi perspiciatis, vitae omnis placeat dicta soluta maxime velit consequuntur quasi, quo minima eum ea voluptatem.</p>
+                    <aside>
+                        <p>Artigo escrito por Theo Santos</p>
+                    </aside>
+                </article>
+            </span>
+        </li>
+
+        <section id="info_us">
+            <h2 class="styled_title">Sobre Nós!</h2>
+            <article>
+                <h2>Quem somos!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatibus vero iure rem fuga eligendi perspiciatis, vitae omnis placeat dicta soluta maxime velit consequuntur quasi, quo minima eum ea voluptatem.</p>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Desenvolvido por Eloim Santos
+        </p>
+    </footer>
+</body>
+</html>
