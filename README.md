@@ -6,3 +6,5 @@ Esse repositório servirá de referência para seus estudos.
 Versão 1.0
 
 Eloim José dos Santos
+
+Agora eu estou aprendendo a gerencionar meus repositórios
