@@ -36,6 +36,7 @@ header h1{
 header p {
     font-family: var(--fonte1);
     padding-bottom: 50px;
+    font-size: 2vw;
 }
 
 header a{
@@ -56,7 +57,7 @@ body{
 
 section{
     
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     line-height: 2em;
     padding-top: 10vh;
     padding-bottom: 10vh;
