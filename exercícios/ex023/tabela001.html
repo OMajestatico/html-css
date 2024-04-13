@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        :root{
+            --corTabela: rgb(0, 0, 0);
+        }
+
+        table{
+            width: 400px;
+            height: 150px;
+            border-collapse:collapse;
+        }
+
+        tr.linha{
+            background-color: gray;
+        }
+        tr.linha2{
+            background-color: rgb(99, 99, 99);
+        }
+
+        td{
+            border: 1.25px solid;
+            border-color: var(--corTabela);
+            -webkit-transition-duration: 500ms;
+            padding: 4px;
+            color: var(--corTabela);
+            
+            
+        }
+        td.tdah{
+            color:  white;
+            
+        }
+
+        td:hover{
+            
+            padding: 15px;
+            -webkit-transition-duration: 500ms;
+            color: white;
+            font-size: 1.3em;
+            font-weight: bolder;
+            background-color: black;
+            box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.343);
+            border:0px solid white;
+        }
+        td.tdah:hover{
+            -webkit-transition-duration: 500ms;
+            color: black;
+            background-color: white;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!-- HIERARQUIA DE TABELAS SIMPLES
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela
+        -->
+    <table id="tabela1">
+        <tr class="linha2"> <!--primeira linha-->
+            <td class="tdah">A1
+            <td class="tdah">B1
+            <td class="tdah">C1
+        </tr>
+
+        <tr class="linha"> <!--segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr class="linha2"> <!--terceira linha-->
+            <td class="tdah">A3</td>
+            <td class="tdah">B3</td>
+            <td class="tdah">C3</td>
+        </tr>
+
+        <tr class="linha"> <!--quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+
+</body>
+</html>
