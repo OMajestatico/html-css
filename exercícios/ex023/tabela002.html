@@ -12,7 +12,13 @@
         table{
             max-width: 500px;
             border-collapse:collapse;
-            background-color: rgb(232, 232, 232);
+        
+        }
+        tbody > tr:nth-child(even){
+            background-image: linear-gradient(to top, yellow, rgb(0, 128, 15));
+        }
+        tbody > tr:nth-child(odd){
+            background-image: linear-gradient(to bottom, yellow, rgb(0, 128, 15));
         }
 
         td, th{
@@ -24,7 +30,7 @@
         td:hover, th:hover{
             font-size: 1.2em;
             font-weight: bolder;
-            background-color: grey;
+            background-image: linear-gradient(to bottom, yellow, rgb(0, 128, 15));
             color: white;
             font-style: italic;
             
@@ -38,161 +44,170 @@
             background-color: gray;
             color: white;
         }
+
+        caption{
+            font-size: 1.2em;
+            padding: 10px;
+            font-weight: bold;
+            background-color: lightgray;
+            border: 1px solid black;
+            border-bottom: 0px solid white;
+            border-collapse: collapse;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes!!1!!!1!!1</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 300px;">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td>1</td>
                 <td>São Paulo</td>
                 <td>44 411 238</td>
             </tr>
 
             <tr>
-                <td>2</td>
+
                 <td>Minas Gerais</td>
                 <td>20 538 718</td>
             </tr>
 
             <tr>
-                <td>3</td>
+
                 <td>Rio de Janeiro</td>
                 <td>16 054 524</td>
             </tr>
 
             <tr>
-                <td>4</td>
+
                 <td>Rio de Janeiro</td>
                 <td>16 054 524</td>
             </tr>
 
             <tr>
-                <td>5</td>
+
                 <td>Bahia</td>
                 <td>11 141 626</td>
             </tr>
 
             <tr>
-                <td>6</td>
+
                 <td>Paraná</td>
                 <td>11 444 380</td>
             </tr>
 
             <tr>
-                <td>7</td>
+
                 <td>Rio Grande do Sul</td>
                 <td>10 882 965</td>
             </tr>
             <tr>
-                <td>8</td>
+
                 <td>Pernambuco</td>
                 <td>8 794 957</td>
             </tr>
             <tr>
-                <td>9</td>
+
                 <td>Pará</td>
                 <td>8 121 025</td>
             </tr>
             <tr>
-                <td>10</td>
+
                 <td>Santa Catarina</td>
                 <td>7 610 361</td>
             </tr>
             <tr>
-                <td>11</td>
+
                 <td>Goiás</td>
                 <td>7 056 495</td>
             </tr>
             <tr>
-                <td>12</td>
+
                 <td>Maranhão</td>
                 <td>6 775 805	</td>
             </tr>
             <tr>
-                <td>13</td>
+
                 <td>Paraíba</td>
                 <td>3 974 687</td>
             </tr>
             <tr>
-                <td>14</td>
+
                 <td>Amazonas</td>
                 <td>3 941 613</td>
             </tr>
             <tr>
-                <td>15</td>
+
                 <td>Espírito Santo</td>
                 <td>3 833 712</td>
             </tr>
             <tr>
-                <td>16</td>
+
                 <td>Mato Grosso</td>
                 <td>3 658 649</td>
             </tr>
             <tr>
-                <td>17</td>
+
                 <td>Rio Grande do Norte</td>
                 <td>3 302 729</td>
             </tr>
 
             <tr>
-                <td>18</td>
+
                 <td>Piauí</td>
                 <td>3 271 199</td>
             </tr>
             <tr>
-                <td>19</td>
+
                 <td>Alagoas</td>
                 <td>3 127 683</td>
             </tr>
             <tr>
-                <td>20</td>
+
                 <td>Distrito Federal</td>
                 <td>2 817 381</td>
             </tr>
             <tr>
-                <td>21</td>
+
                 <td>Mato Grosso do Sul</td>
                 <td>2 757 013</td>
             </tr>
             <tr>
-                <td>22</td>
+
                 <td>Sergipe</td>
                 <td>2 209 558</td>
             </tr>
 
             <tr>
-                <td>23</td>
+
                 <td>Rondônia</td>
                 <td>1 581 196</td>
             </tr>
             <tr>
-                <td>24</td>
+
                 <td>Tocantins</td>
                 <td>1 511 460</td>
             </tr>
 
             <tr>
-                <td>25</td>
+
                 <td>Acre</td>
                 <td>830 018	</td>
             </tr>
             <tr>
-                <td>26</td>
+
                 <td>Amapá</td>
                 <td>733 759	</td>
             </tr>
             <tr>
-                <td>27</td>
+
                 <td>Roraima</td>
                 <td>636 707</td>
             </tr>
@@ -200,8 +215,7 @@
         </tbody>
 
         <tfoot>
-            <td>28</th>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td>210 147 125</td>
         </tfoot>
     </table>
