@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <a href="#" onclick="clicou()" >CLIQUE EM MIM</a>
+    <div id="saída"></div>
+
+    <script>
+        let indexColor = 0;
+        function clicou()
+        {
+            s = document.getElementById("saída")
+            s.innerHTML += '<p> você clicou na saída </p>'
+            indexColor+=1;
+            switch(indexColor){
+                case 1:
+                    s.style.backgroundColor="blue"
+                    break
+                case 2:
+                    s.style.backgroundColor="red"
+                    break
+                case 3:
+                    s.style.backgroundColor="yellow"
+                    break
+                case 4:
+                    s.style.backgroundColor="lime"
+                    break
+                case 5:
+                    s.style.backgroundColor="gray"
+                    break
+                case 6:
+                    s.style.backgroundColor="black"
+                    s.style.color = "white";
+                    break
+                case 7:
+                    s.style.backgroundColor="rose"
+                    s.style.color = "black";
+                    break
+                case 8:
+                    s.style.backgroundColor="pink"
+                    break
+                case 9:
+                    s.style.backgroundColor="darkred"
+                    break
+                case 10:
+                    s.style.backgroundColor="cyan"
+                    break
+                case 11:
+                    s.style.backgroundColor="orange"
+                    break
+                case 12:
+                    s.style.backgroundColor="lightgray"
+                    break
+
+                default:
+                    s.innerHTML = "chega."
+                    s.style.backgroundColor = "red"
+                    s.style.color = "black"
+                    s.style.width = "150px"
+                    s.style.height = "150px"
+                    s.style.padding = "10px"
+                    s.style.textAlign = "center"
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
