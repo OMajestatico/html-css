@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAVASCRIPT</title>
+    <style>
+        body{
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: 800;
+            color:black;
+
+            font-variant: small-caps;
+            font-size: 1.1em;
+            transition-duration: 500ms;
+        }
+
+        p{
+            margin: 0px;
+            background-color: red;
+            font-size: 1.3em;
+            transition-duration: 500ms;
+        }
+
+        p:hover{
+            background-color: blue;
+            color: yellow;
+            text-shadow: 2px 2px black;
+            font-size: 1.6em;
+        }
+
+        a:hover{
+            font-size: 1.3em;
+            background-color: black;
+            color: white;
+        }
+
+        div{
+            height: max-content;
+        }
+    </style>
 </head>
 <body>
-    <a href="#" onclick="clicou()" >CLIQUE EM MIM</a>
+    <a href="#" onclick="clicou()" >Clique em mim!</a>
     <div id="saída"></div>
 
     <script>
@@ -14,57 +54,62 @@
         function clicou()
         {
             s = document.getElementById("saída")
-            s.innerHTML += '<p> você clicou na saída </p>'
+            if (indexColor<13){
+                s.innerHTML += '<p id="'+ indexColor.toString + '"> você clicou na saída </p> '
+                
+            }
             indexColor+=1;
             switch(indexColor){
                 case 1:
-                    s.style.backgroundColor="blue"
+                document.getElementById(indexColor.toString).style.backgroundColor="blue"
                     break
                 case 2:
-                    s.style.backgroundColor="red"
+                document.getElementById(indexColor.toString).style.backgroundColor="red"
                     break
                 case 3:
-                    s.style.backgroundColor="yellow"
+                document.getElementById(indexColor.toString).style.backgroundColor="yellow"
                     break
                 case 4:
-                    s.style.backgroundColor="lime"
+                document.getElementById(indexColor.toString).style.backgroundColor="lime"
                     break
                 case 5:
-                    s.style.backgroundColor="gray"
+                document.getElementById(indexColor.toString).style.backgroundColor="gray"
                     break
                 case 6:
-                    s.style.backgroundColor="black"
-                    s.style.color = "white";
+                document.getElementById(indexColor.toString).style.backgroundColor="black"
+                document.getElementById(indexColor.toString).style.color = "white";
                     break
                 case 7:
-                    s.style.backgroundColor="rose"
-                    s.style.color = "black";
+                document.getElementById(indexColor.toString).style.backgroundColor="rose"
+                document.getElementById(indexColor.toString).style.color = "black";
                     break
                 case 8:
-                    s.style.backgroundColor="pink"
+                document.getElementById(indexColor.toString).style.backgroundColor="pink"
                     break
                 case 9:
-                    s.style.backgroundColor="darkred"
+                document.getElementById(indexColor.toString).style.backgroundColor="darkred"
                     break
                 case 10:
-                    s.style.backgroundColor="cyan"
+                document.getElementById(indexColor.toString).style.backgroundColor="cyan"
                     break
                 case 11:
-                    s.style.backgroundColor="orange"
+                document.getElementById(indexColor.toString).style.backgroundColor="orange"
                     break
                 case 12:
-                    s.style.backgroundColor="lightgray"
+                document.getElementById(indexColor.toString).style.backgroundColor="lightgray"
                     break
-
-                default:
+                case 13:
                     s.innerHTML = "chega."
                     s.style.backgroundColor = "red"
                     s.style.color = "black"
                     s.style.width = "150px"
-                    s.style.height = "150px"
+                    s.style.height = "max-content"
                     s.style.padding = "10px"
                     s.style.textAlign = "center"
                     break;
+
+                default:
+                    s.innerHTML+="<p>não pode mais clicar.</p>"
             }
         }
     </script>
