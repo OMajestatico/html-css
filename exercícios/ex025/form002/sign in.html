@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: rgb(59, 59, 59);
+            
+        }
+        p{
+            margin: 5px;
+        }
+
+        form{
+            text-align: left;
+            background-color: black;
+            box-shadow: 6px 6px 32px 0px rgba(0, 0, 0, 0.621);
+            color: white;
+            border-radius: 15px;
+            padding: 10px;
+            width: 75%;
+            margin: auto;
+        }
+
+        input{
+            padding: 5px
+        }
+
+        input[type=submit],input[type=button]{
+            padding: 5px;
+            background-color: black;
+            color: lime;
+            font-size: 20px;
+            border: none;
+            border-radius: 15px;
+            transition-duration: 500ms;
+        }
+
+        a{
+            padding: 5px;
+            background-color: black;
+            color: lime;
+            font-size: 20px;
+            border: none;
+            border-radius: 15px;
+            transition-duration: 500ms;
+            text-decoration: none;
+        }
+
+        a:hover{
+            background-color: lime;
+            color: black;
+            font-size: 20px;
+            border: none;
+        }
+
+        input[type=submit]:hover,input[type=button]:hover{
+            background-color: lime;
+            color: black;
+            font-size: 20px;
+            border: none;
+        }
+
+        input[type=submit]:focus,input[type=button]:focus{
+            background-color: rgb(13, 119, 36);
+            color: black;
+            font-size: 18.5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input required type="text" name="usu" id="iusu" minlength="4" maxlength="15" placeholder="Crie um nome de usuário" autocomplete="username" size="20">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input required type="password" name="sen" id="isen" minlength="8" maxlength="32" placeholder="Crie sua senha" autocomplete="new-password">
+        </p>
+        <p>
+            <label for="imail">E-mail:</label>
+            <input required type="email" name="mail" id="imail" minlength="5" maxlength="22" placeholder="Coloque seu e-mail aqui" autocomplete="email">
+        </p>
+        <p>
+            <label for="idate">Data de nascimento:</label>
+            <input required type="date" name="date" id="idate">
+        </p>
+        <p>
+            <label for="itel">Telefone:</label>
+            <input required type="tel" name="tel" id="itel" minlength="5" maxlength="22" placeholder="Seu número de telefone" autocomplete="tel">
+        </p>
+        <p>
+            <input type="submit" value="Cadastrar"> 
+            ou 
+            <a href="login.html"cadastro">Logar-se</a>
+        </p>
+    </form>
+</body>
+</html>
