@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Exemplo de formulários</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <fieldset>
             <legend>Outras infromações</legend>
             <p>
@@ -64,12 +64,28 @@
             </p>
 
             <p>
-                dat
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilista</option>
+                    <option value="PROF">Professor</option>
+                    <option value="PROG">Programador</option>
+                    <option value="POL">Policial</option>
+                    <option value="BOMB">Bombeiro</option>
+                </datalist>
             </p>
+        
+            <p>
+                <label for="imsg">Mensagem</label>
+                <textarea name="msg" id="imsg"></textarea>
+            </p>
+
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
+            
         </p>
     </form>
 </body>

@@ -24,3 +24,7 @@ legend{
 input{
     padding: 2px;
 }
+
+img{
+    max-width: 75%;
+}

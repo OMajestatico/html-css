@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>just a brand new blank form.</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <fieldset>
+            <legend>idade</legend>
+            
+            <div>
+                <label for="iano">Em que ano você nasceu?</label>
+                <input type="number" name="ano" id="iano"
+                min="1900" max="2024" value="2000"
+                >
+            </div>
+
+            <div></div>
+
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
