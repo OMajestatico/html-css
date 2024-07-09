@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*ESTILO PARA TELAS*/;
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: rgb(225, 225, 225);
+}
+
+header{
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 1em;
+}
+
+header > h1{
+    text-align: center;
+}
+
+menu li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+    background-color: darkgray;
+    padding: 10px;
+    border-radius: 0.6em;
+    color: white;
+    box-shadow: 5px 5px rgb(99, 99, 99);
+    transition-duration: .5s;
+}
+
+menu li:hover{
+    background-color: rgb(198, 195, 195);
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px rgb(149, 149, 149);
+}
+
+main{
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+    line-height: 1.5em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.22);
+}
