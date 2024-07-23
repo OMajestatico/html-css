@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/media-querys.css">
 
 </head>
-<body>
+<body onresize="resized()">
     <header>
         <h1>O Majestático</h1>
         <span onclick="clickMenu()" id="burger" class="material-symbols-rounded">menu</span>
@@ -53,6 +53,11 @@
 
             if (toggle){itens.style.display = 'block'}
             else {itens.style.display = 'none'}
+        }
+
+        function resized(){
+            if (window.innerWidth >= 768){ itens.style.display = 'block'}
+            else{itens.style.display = 'none' }
         }
     </script>
 </body>
