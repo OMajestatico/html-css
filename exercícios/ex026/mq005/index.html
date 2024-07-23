@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Querys</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="estilos/style.css">
+
 </head>
 <body>
     <header>
-        <h1>Meu site</h1>
-        <menu>
+        <h1>O Majestático</h1>
+        <span onclick="clickMenu()" id="burger" class="material-symbols-rounded">menu</span>
+        <menu id="itens">
             <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Casa</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Vida pessoal</a></li>
+                <li><a href="#">Sobre</a></li>
             </ul>
         </menu>
     </header>
 
     <main>
         <article>
-            <h2>Testando Media Queries</h2>
+            <h2>BREAKING NEWS</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sunt ut magni eum omnis iste quibusdam, rem facilis laudantium ea eligendi deserunt aperiam, exercitationem voluptatum consequatur, et quasi. Earum, beatae.
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti id illo placeat amet maxime voluptate aut unde, dolorem, possimus eligendi hic autem tenetur. Modi hic nostrum sequi id ullam.
@@ -41,5 +44,15 @@
             </p>
         </article>
     </main>
+
+    <script>
+        let toggle = false
+        function clickMenu(){
+            toggle = !toggle
+            
+            if (toggle){itens.style.display = 'block'}
+            else {itens.style.display = 'none'}
+        }
+    </script>
 </body>
 </html>
