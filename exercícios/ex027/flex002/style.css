@@ -10,8 +10,7 @@ div.content{
     border-radius: 10px;
     
     display: flex;
-    flex-wrap: wrap-reverse;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
 div.item{
