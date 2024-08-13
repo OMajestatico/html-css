@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexboxing YOOO</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="item" id="l1" onclick="playSound(0)"> 
+           A
+        </div>
+        <div class="item" id="l2"> 
+            B
+         </div>
+         <div class="item" id="l3"> 
+            C
+         </div>
+         <div class="item" id="l4"> 
+            D
+         </div>
+         <div class="item" id="l5"> 
+            E
+         </div>
+         <div class="item" id="l6"> 
+            F
+         </div>
+    </div>
+
+    <script>
+      function playSound(index){
+         var audio = new Audio("sounds/door" + index + ".MP3");
+         audio.play();
+      }
+    </script>
+</body>
+</html>
