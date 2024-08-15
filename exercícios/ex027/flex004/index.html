@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="content">
+    <div class="content" id="content">
         <div class="item" id="l1" onclick="playSound(0)"> 
            A
         </div>
         <div class="item" id="l2"> 
-            B
+           b
          </div>
          <div class="item" id="l3"> 
-            C
+            c
          </div>
          <div class="item" id="l4"> 
-            D
+            d
          </div>
          <div class="item" id="l5"> 
             E
@@ -29,10 +29,36 @@
          </div>
     </div>
 
+    <input id="slider" oninput="onchangess()" onmousedown="addGrabbing()" onmouseup="removeGrabbing()" type="range" name="" id="" min="20" max="750" value="750">
+
     <script>
       function playSound(index){
          var audio = new Audio("sounds/door" + index + ".MP3");
          audio.play();
+      }
+      var s = document.getElementById("slider");
+         var c = document.getElementById("content");
+
+         c.style.width = s.value + "px";
+
+      function onchangess(){
+         var s = document.getElementById("slider");
+         var c = document.getElementById("content");
+
+         if (s.value < 340) s.value = 340
+
+         //s.style.width = s.value + "px";
+         c.style.width = s.value + "px";
+      }
+
+      function addGrabbing() {
+         var s = document.getElementById("slider");
+         s.classList.add("grabbing");
+      }
+
+      function removeGrabbing() {
+         var s = document.getElementById("slider");
+         s.classList.remove("grabbing");
       }
     </script>
 </body>

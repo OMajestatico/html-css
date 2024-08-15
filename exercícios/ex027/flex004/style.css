@@ -5,7 +5,6 @@ body{
 
 div.content{
     background-color: white;
-    padding: 10px;
     border-radius: 10px;
 
     display: flex;
@@ -14,6 +13,7 @@ div.content{
     align-items: flex-start;
 
     height: 200px;
+    min-width: 340px;
 }
 
 div.item{
@@ -23,6 +23,8 @@ div.item{
     height: max-content;
     text-transform: uppercase;
     padding: 20px;
+
+    text-align: center;
     
     /*FLEXBOX*/
 }
@@ -35,34 +37,47 @@ div.item:hover{
 div.item{
     background-color: rgb(0, 174, 255);
     cursor: pointer;
+
+    /*flex-basis: 150px;*/
+    flex: auto;
+
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+#slider{
+    width: 750px;
+    cursor: grab;
+}
+
+#slider.grabbing{
+    width: 750px;
+    cursor: grabbing;
 }
 
 div#l1{
     align-self: flex-start;
-    flex-basis: 12023px;
 }
 
 div#l2{
     align-self: center;
-    flex-basis: 12023px;
+    flex-grow: 1;
 }
 
 div#l3{
     align-self: flex-end;
-    flex-basis: 12023px;
 }
 
 
 div#l4{
     align-self: center;
-    flex-basis: 12023px;
+    flex-grow: 2;
 }
 
 div#l5{
     align-self: flex-start;
-    flex-basis: 12023px;
 }
 div#l6{
     align-self: center;
-    flex-basis: 12023px;
+    flex-grow: 4;
 }
