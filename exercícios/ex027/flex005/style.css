@@ -31,13 +31,13 @@ div.item{
 }
 
 div#a{
-    flex: 0 1 200px;
+    flex: none;
 }
 
 div#b{
-    flex: 1 0 200px;
+    flex: none;
 }
 
 div#c{
-    flex: 0 0 200px;
+    flex: none;
 }
